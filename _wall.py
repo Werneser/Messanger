@@ -48,7 +48,7 @@ class Wall:
     def set_cookie(self, user):
         with open(self.COOKIES, 'r', encoding='utf-8') as f:
             cookies = json.load(f)
-        cookie = str(time.time()) + str(random.randrange(7**10))  # Генерируем уникальную куку для пользователя
+        cookie = str(time.time()) + str(random.randrange(7**10)) 
         cookies[cookie] = user
         with open(self.COOKIES, 'w', encoding='utf-8') as f:
             json.dump(cookies, f)
