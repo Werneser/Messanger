@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 import cgi
-import sys
-import codecs
-sys.stdout = codecs.getwriter("utf-8")
+
 form = cgi.FieldStorage()
 text1 = form.getfirst("TEXT_1", "не задано")
 text2 = form.getfirst("TEXT_2", "не задано")
