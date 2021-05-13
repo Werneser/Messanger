@@ -15,12 +15,6 @@ print("""<!DOCTYPE HTML>
             <title>Обработка данных форм</title>
         </head>
         <body>""")
-"""<form action="/cgi-bin/wall.py">
-    <meta  encoding='utf-8'>
-        <textarea name="text"></textarea>
-        <input type="hidden" name="action" value="publish">
-        <input type="submit">
-    </form>"""
 print("<h1>Обработка данных форм!</h1>")
 print("<p>TEXT_1: {}</p>".format(text1))
 print("<p>TEXT_2: {}</p>".format(text2))
